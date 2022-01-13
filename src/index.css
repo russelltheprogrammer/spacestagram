@@ -1,13 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
 body {
 text-align: center;
+background-color: black;
+margin: 0;
+padding: 0;
+height: 100%;
+width: 100%;
 }
 
 .title{
-  font-size: 35px;
+  font-family: 'Nunito', sans-serif;
+  font-size: 25px;
+  border-bottom: 3px outset black;
+  width: 100%;
+  background-color: white;;
+  padding-top: 8px;
+}
+
+.title > h1 {
+  margin-top: 0px;
 }
 
 .loading {
   font-size: 50px;
-  color: red;
+  color: white;
 }
 
+.title-date-container{
+  padding-bottom: 10px;
+}
+
+.apiData-container{
+  padding-top: 25px;
+}
+
+.apiData-container > ul > li{
+  list-style: none;
+  font-weight: bold;
+  font-size: 17.5px;
+}
+
+.apiDataPicture {
+  max-width: 50%;
+  height: auto;
+  width: auto;
+  padding-bottom: 7px;
+}
+
+.item-container{
+  border: black;
+  border-style: solid;
+  border-width: 2px;
+  border-radius: 20%;
+  padding: 10px 0px 10px 0px;
+  background-color: white;
+  width: 90%;
+  margin-left: 3.5%;
+}
+
+.explanation-container{
+  width: 80%;
+  text-align: center;
+  margin-left: 10%;
+  align-items: center;
+
+}
+
+.apiDataButton{
+  text-align: center;
+  padding: 10px 15px 10px 15px;
+  font-size: 45px;
+  background-color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.apiDataButton:hover{
+  color: orangered;
+}
+
+.apiDataButtonLiked{
+  color: red;
+  text-align: center;
+  padding: 10px 15px 10px 15px;
+  font-size: 45px;
+  background-color: white;
+  border: none;
+  cursor: pointer;
+}
+.apiDataButtonLiked:hover{
+ color: orangered;
+}
+
+.apiDataButton-container{
+  padding-bottom: 15px;
+}
