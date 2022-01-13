@@ -1,4 +1,13 @@
 body {
-align-items: center;
+text-align: center;
+}
+
+.title{
+  font-size: 35px;
+}
+
+.loading {
+  font-size: 50px;
+  color: red;
 }
 
