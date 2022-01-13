@@ -1,9 +1,10 @@
 import './index.css';
+import Spacestagram from './Spacestagram';
 
 function App() {
   return (
     <div className="App">
-     Insert info Here
+     <Spacestagram />
     </div>
   );
 }
