@@ -1,3 +1,7 @@
+# Link to 25 + 5 --> [25 + 5 Clock](http://russelltheprogrammer.github.io/spacestagram/)
+
+Note: This project was done for the Shopify Front End Developer Intern Challenge for Summer 2022
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
