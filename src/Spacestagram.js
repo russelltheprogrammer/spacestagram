@@ -1,14 +1,26 @@
 import './index.css';
 import React, { useState, useEffect } from 'react';
 import { month } from './constants';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faThumbsUp, faRocket, faHeart } from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faThumbsUp, faRocket, faHeart } from '@fortawesome/free-solid-svg-icons';
+import { CopyToClipboard } from 'react-copy-to-clipboard';
 
 const Spacestagram = () => {
 
 const [isLoading, setIsLoading] = useState(true);
 const [apiData, setApiData] = useState(null);
-const [buttonStatus, setButtonStatus] = useState(true);
+const [copied, setCopied] = useState({
+    value: '',
+    copied: false
+});
+const [buttonStatus, setButtonStatus] = useState({
+    0: true,
+    1: true,
+    2: true,
+    3: true,
+    4: true,
+    5: true
+});
 
 useEffect(() => {
     const url = 'https://api.nasa.gov/planetary/apod?api_key=rfOteRGGpmwtn0HxnwvPb8XyzId5aPaVChqaUczJ&start_date=2016-08-06&end_date=2016-08-11';
@@ -17,7 +29,7 @@ useEffect(() => {
         try {
             const response = await fetch(url);
             const data = await response.json();
-            setApiData(data)
+            setApiData(data);
             setIsLoading(false);
         }
         catch(error){
@@ -30,12 +42,22 @@ useEffect(() => {
 const handleDateConversion = (date) => {
     const copyDate = date;
     const stringDate = new Date(date);
-    let outputDate = month[stringDate.getMonth()] + " " + copyDate.substring(8) + ", " + copyDate.substring(0, 4)
+    let outputDate = month[stringDate.getMonth()] + " " + copyDate.substring(8) + ", " + copyDate.substring(0, 4);
     return outputDate;
 }
 
-const handleClick = () => {
-    buttonStatus ? setButtonStatus(false) : setButtonStatus(true)
+const handleClick = (index) => {
+    let id = index;
+    if(buttonStatus[id]) {
+        return setButtonStatus(prevState => ({ ...prevState, [id]: false }));
+    }
+    else {
+        return setButtonStatus(prevState => ({ ...prevState, [id]: true }));
+    }
+};
+
+const handleCopy = () => {
+    return setCopied({ [copied]: true }) + alert("Image Copied To Clipboard" );
 };
 
     if(!isLoading){
@@ -61,11 +83,14 @@ const handleClick = () => {
                             </div>
                             <br/>
                             <div className="apiDataButton-container">
-                                {buttonStatus ?
-                                <button className="apiDataButton" onClick={handleClick}><FontAwesomeIcon icon={faThumbsUp} /></button> 
-                                : <button className="apiDataButtonLiked" onClick={handleClick}><FontAwesomeIcon icon={faHeart} /></button>
+                                {buttonStatus[index] ?
+                                <button className="apiDataButton" onClick={() => handleClick(index)}><FontAwesomeIcon icon={faThumbsUp} /></button> 
+                                : <button className="apiDataButtonLiked" onClick={() => handleClick(index)}><FontAwesomeIcon icon={faHeart} /></button>
                                 }
                             </div>
+                            <CopyToClipboard text={item.url} onCopy={() => handleCopy()}>
+                                <button className="copyButton">Copy Image URL</button>
+                            </CopyToClipboard>
                             </li>
                         ))}
                     </ul>
