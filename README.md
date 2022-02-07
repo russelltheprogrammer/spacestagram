@@ -1,4 +1,4 @@
-# Link to Spacetagram > [Spacestagram](http://russelltheprogrammer.github.io/spacestagram/)
+# Link to Spacetagram --> [Spacestagram](http://russelltheprogrammer.github.io/spacestagram/)
 
 Note: This project was done for the Shopify Front End Developer Intern Challenge for Summer 2022
 
