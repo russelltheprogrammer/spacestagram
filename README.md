@@ -35,20 +35,19 @@ There is a lot to be improved on here, you can polish the required features by c
 If you need inspiration, here are examples of what you can work on. If you work on these ideas,
 <strong>we recommend choosing only one or two.</strong>
 
-●  Save likes if the user leaves or reloads the page
-● Animate the “like” action (might we suggest a heart?)
-● Add a loading state while we wait for NASA’s API to return data
-● Create shareable links for each image
-● Add a date-picker to be able to browse photos starting from a specific date
+- Save likes if the user leaves or reloads the page
+- Animate the “like” action (might we suggest a heart?)
+- Add a loading state while we wait for NASA’s API to return data
+- Create shareable links for each image
+- Add a date-picker to be able to browse photos starting from a specific date
 
 # Submission
 
 Please submit your application via “Apply Now” and make sure you include:
 
-● A link to your hosted code so we can test it (Free hosting available via: CodeSandbox,
-Github pages, Netlify and Heroku)
-● A link to your Github repository containing the code
-● Any other notes you'd like us to consider alongside the page
+- A link to your hosted code so we can test it (Free hosting available via: CodeSandbox,Github pages, Netlify and Heroku)
+- A link to your Github repository containing the code
+- Any other notes you'd like us to consider alongside the page
 
 ## What I used to create?
 
