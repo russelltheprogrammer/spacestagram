@@ -1,4 +1,4 @@
-# Link to Spacetagram --> [Spacestagram](http://russelltheprogrammer.github.io/spacestagram/)
+# Link to Spacetagram > [Spacestagram](http://russelltheprogrammer.github.io/spacestagram/)
 
 Note: This project was done for the Shopify Front End Developer Intern Challenge for Summer 2022
 
@@ -17,10 +17,10 @@ It should be simple. The main functions for the user interface are as followed.
 # Technical Requirements
 
 1. Search results should come from NASA’s free APIs, for which you’ll need a free API from https://api.nasa.gov/
-○ You do not need to enter anything more than your first, last name, and email address (i.e. application url is not required)
-○ We’ve provided screenshots below of demo apps we built using the [Astronomy Picture of the Day](https://api.nasa.gov/#apod) or Mars Rover Photos APIs (along with Shopify’s open source React component library: Polaris).
-○ You are free to use any NASA API you like
-○ You are free to use any front end framework/component library you like (or none at all!)
+    - You do not need to enter anything more than your first, last name, and email address (i.e. application url is not required)
+    - We’ve provided screenshots below of demo apps we built using the [Astronomy Picture of the Day](https://api.nasa.gov/#apod) or Mars Rover Photos APIs (along with Shopify’s open source React component library: Polaris).
+    - You are free to use any NASA API you like
+    - You are free to use any front end framework/component library you like (or none at all!)
 
 2. Each image result should list at least a title, date of capture (ideally in earth_date) and a button to “like” that image.
 
