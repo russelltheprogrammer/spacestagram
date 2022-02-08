@@ -59,7 +59,7 @@ I used ```create-react-app```.
 + React hooks
 + Map Functions
 + Custom Functions
-+ Handle ButtonClick Functions
++ Handle Click Functions
 + CopyToClipboard library
 + FontAwesome library
 
